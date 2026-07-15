@@ -17,4 +17,7 @@ function resolveBase() {
 export default defineConfig({
   base: resolveBase(),
   plugins: [react()],
-})
+});
+
+const base = resolveBase();
+console.log('Vite base:', base);
